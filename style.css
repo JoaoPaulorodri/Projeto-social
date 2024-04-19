@@ -10,26 +10,26 @@ html, body{
     background-color: black;
 }
 body{
-    background-image: url(../Projeto-social/pacote-d013/imagens/fundo-madeira.jpg);
+    background: url('../Projeto-social/pacote-d013/imagens/fundo-madeira.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top center;
+ 
 }
 main{
     position: relative;
     height: 100vh;
-    background-color: green;
+ 
 }
 section#telefone{
     
-    height: 311px;
-    width: 627px;
+    height: 627px;
+    width: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    background-image: url(./pacote-d013/imagens/frame-iphone.png);
+    transform: translate(-50%, -50%);
+    background-image: url('./pacote-d013/imagens/frame-iphone.png');
+    background-repeat: no-repeat;
 }
 iframe#tela{
     position: relative;
@@ -37,4 +37,19 @@ iframe#tela{
     left: 22px;
     width: 269px;
     height: 471px;
+}
+section#redes{
+   text-align: right;
+}
+section#redes img {
+    width: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.41);
+}
+section#redes img:hover {
+    border: 2.5px solid white;
+    transform: translate(-10px, -10px);
+    transition: transform 0.5s, border 1s;
 }
